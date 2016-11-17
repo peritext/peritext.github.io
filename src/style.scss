@@ -1,0 +1,325 @@
+@import './fonts/stylesheet.css';
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+$color-light-bg: white;
+$color-dark-bg: darkblue;
+$color-dark-text: darkgrey;
+$color-text-fr: DarkCyan;
+$color-text-en: DarkOliveGreen;
+$padding-medium: 1rem;
+$padding-large: 2rem;
+$fontsize-small: .8rem;
+$fontsize-normal: 1.2rem;
+$fontsize-medium: 2.5rem;
+$fontsize-big: 5rem;
+$fontsize-very-big: 10pc;
+$breakpoint-phone: only screen and (min-width : 320px) and (max-width : 768px);
+$breakpoint-tablet: only screen and (min-width : 768px) and (max-width : 1224px);
+
+// mixins
+@mixin transition($args...)
+{
+    -webkit-transition: $args;
+       -moz-transition: $args;
+        -ms-transition: $args;
+         -o-transition: $args;
+            transition: $args;
+}
+
+
+.french
+{
+    color: $color-text-fr;
+}
+
+.english
+{
+    color: $color-text-en;
+}
+
+a,
+a:hover,
+a:visited,
+a:active
+{
+    text-decoration: none;
+
+    color: inherit;
+}
+
+html,
+body,
+#mount,
+#mount > div
+{
+    font-family: 'Roboto', sans-serif;
+
+    width: 100%;
+    height: 100%;
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
+
+    color: $color-dark-text;
+    background: $color-light-bg;
+}
+
+body
+{
+    overflow-x: hidden;
+}
+
+
+#brand-wrapper
+{
+    display: flex;
+    overflow: hidden;
+
+    width: 100%;
+    height: 100%;
+
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: center;
+    #brand-container
+    {
+        display: flex;
+        overflow: hidden;
+
+        width: 100%;
+        height: 100%;
+
+        flex-flow: column nowrap;
+        align-items: center;
+        justify-content: center;
+        iframe
+        {
+            position: absolute;
+            top: 0;
+            left: 0;
+
+            width: 100%;
+            height: 100%;
+        }
+        h1
+        {
+            font-family: 'munro';
+            font-size: $fontsize-very-big;
+
+            z-index: 2;
+
+            margin: 0;
+            padding: $padding-medium;
+
+            color: $color-light-bg;
+            background: $color-dark-bg;
+            a
+            {
+                font-family: 'munro';
+                font-size: $fontsize-big;
+
+                position: relative;
+                top: -1rem;
+
+                padding: $padding-medium;
+
+                color: $color-light-bg;
+                background: $color-dark-bg;
+            }
+
+            #subline{
+              margin-top : $padding-large;
+              display: block;
+              font-size: $fontsize-medium;
+              font-family: 'Roboto', sans-serif;
+              font-weight: 400;
+              .secondary{
+                opacity: .5;
+              }
+            }
+            @media #{$breakpoint-phone}
+            {
+                font-size: 1rem;
+                a
+                {
+                    font-size: 1rem;
+
+                    top: 0;
+                }
+            }
+        }
+    }
+}
+
+
+header
+{
+    line-height: $fontsize-medium*3;
+
+    display: flex;
+
+    width: 100%;
+    height: 80px;
+    padding: 0 $padding-medium $padding-large $padding-medium;
+
+    text-align: center;
+    text-transform: uppercase;
+
+    color: $color-light-bg;
+    background: $color-dark-bg;
+
+    backgound-color: #333;
+    flex-flow: row nowrap;
+    align-contents: space-between;
+    .logo
+    {
+        font-family: 'munro';
+    }
+    .logo,
+    a
+    {
+        font-size: $fontsize-medium;
+        font-weight: 800;
+
+        margin-right: $padding-large;
+
+        @include transition(all .2s);
+        .french,
+        .english
+        {
+            color: inherit;
+        }
+    }
+    @media #{$breakpoint-phone}
+    {
+        overflow: hidden;
+
+        flex-flow: column nowrap;
+    }
+}
+
+.sticky
+{
+    header
+    {
+        position: relative;
+        top: 80px;
+
+        padding-top: 0;
+        padding-bottom: $padding-medium;
+        a,
+        .logo
+        {
+            font-size: $fontsize-normal;
+        }
+    }
+}
+
+
+.site-section
+{
+    display: flex;
+
+    padding-top: 5rem;
+
+    flex-flow: row nowrap;
+    > section
+    {
+        padding: $padding-medium;
+
+        flex: 1;
+    }
+    a
+    {
+        text-decoration: underline;
+    }
+    p
+    {
+        font-size: $fontsize-normal;
+    }
+    &:last-of-type
+    {
+        padding-bottom: 20rem;
+    }
+    ul
+    {
+        font-size: $fontsize-normal;
+
+        padding: $padding-medium;
+        li
+        {
+            margin-bottom: $padding-medium;
+        }
+    }
+    @media #{$breakpoint-phone}
+    {
+        flex-flow: column nowrap;
+    }
+}
+
+footer
+{
+    padding: $padding-large;
+
+    color: $color-light-bg;
+    background: $color-dark-text;
+    img
+    {
+        max-width: 5rem;
+        max-height: 5rem;
+    }
+}
+
+
+::-webkit-scrollbar
+{
+    width: .7rem;
+}
+::-webkit-scrollbar-button
+{
+    /* 2 */
+}
+::-webkit-scrollbar-track
+{
+    border-top: 1px solid $color-dark-bg!important;
+    border-bottom: 1px solid $color-dark-bg!important;
+}
+
+::-webkit-scrollbar-thumb
+{
+    background: $color-dark-bg!important;
+}
+::-webkit-scrollbar-corner
+{
+    /* 6 */
+}
+::-webkit-resizer
+{
+    /* 7 */
+}
+
+scrollbar
+{
+    /*  clear useragent default style*/
+    -moz-appearance: none !important;
+}
+/* buttons at two ends */
+scrollbarbutton
+{
+    -moz-appearance: none !important;
+}
+/* the sliding part*/
+thumb
+{
+    -moz-appearance: none !important;
+}
+scrollcorner
+{
+    resize: both;
+
+    -moz-appearance: none !important;
+}
+/* vertical or horizontal */
+scrollbar[orient='vertical']
+{
+    color: $color-dark-bg!important;
+}
