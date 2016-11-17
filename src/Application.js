@@ -112,16 +112,14 @@ The model proposed by Peritext insure a great documentary quality and argumentat
             <section className="french">
               <h2>Comment l'utiliser</h2>
               <p>
-              Pour l'instant, Peritext est réservé à des auteurs ayant un minimum de connaissance du langage <a href="https://daringfireball.net/projects/markdown/syntax">Markdown</a> et qui savent manipuler un terminal de lignes de commandes. Ceux-ci peuvent se rendre sur
-              <a href="https://github.com/peritext/peritext">la page du code open source de la bibliothèque peritext</a>.
+              Pour l'instant, Peritext est réservé à des auteurs ayant un minimum de connaissance du langage <a href="https://daringfireball.net/projects/markdown/syntax">Markdown</a> et qui savent manipuler un terminal de lignes de commandes. Ceux-ci peuvent se rendre sur <a href="https://github.com/peritext/peritext">la page du code open source de la bibliothèque peritext</a>.
             </p>
               <p>Tutoriaux et documentation à venir ...</p>
             </section>
             <section className="english">
               <h2>How to use it</h2>
               <p>
-              Until now, Peritext is only accessible to authors having a basic understanding of the <a href="https://daringfireball.net/projects/markdown/syntax">Markdown language</a> and knowing how to manipulate a command lines terminal. These can go to the
-              <a href="https://github.com/peritext/peritext">open source page of the Peritext library</a>.
+              Until now, Peritext is only accessible to authors having a basic understanding of the <a href="https://daringfireball.net/projects/markdown/syntax">Markdown language</a> and knowing how to manipulate a command lines terminal. These can go to the <a href="https://github.com/peritext/peritext">open source page of the Peritext library</a>.
             </p>
               <p>Tutorials and documentation to come ...</p>
             </section>
@@ -136,8 +134,7 @@ The model proposed by Peritext insure a great documentary quality and argumentat
               Le projet Peritext est conduit par Robin de Mourat dans le cadre d'un doctorat en esthétique pourtant sur la publication académique en sciences humaines.
             </p>
               <p>
-            Il a été prototypé une première fois pour la réalisation du compagnon numérique de l'article
-               <a href="http://modesofexistence.org/anomalies/">Clues. Anomalies. Understanding. Detecting underlying assumptions and expected practices in the Digital Humanities through the AIME project</a>,
+            Il a été prototypé une première fois pour la réalisation du compagnon numérique de l'article <a href="http://modesofexistence.org/anomalies/">Clues. Anomalies. Understanding. Detecting underlying assumptions and expected practices in the Digital Humanities through the AIME project</a>,
               publié dans la revue Visible Language (49,3),
               à l'occasion d'une collaboration avec <a href="http://www.medialab.sciences-po.fr/fr/people/donato-ricci/">Donato Ricci</a> et
               l'équipe du projet <a href="http://modesofexistence.org/">Une Enquête sur les modes d'existence</a>.
@@ -149,11 +146,9 @@ The model proposed by Peritext insure a great documentary quality and argumentat
               Peritext project is lead by Robin de Mourat in the frame of his PhD in digital aesthetics which deals with digital academic publishing.
             </p>
               <p>
-               It has been prototyped a first time for the realization of the digital companion of the article
-               <a href="http://modesofexistence.org/anomalies/">Clues. Anomalies. Understanding. Detecting underlying assumptions and expected practices in the Digital Humanities through the AIME project</a>,
+               It has been prototyped a first time for the realization of the digital companion of the article <a href="http://modesofexistence.org/anomalies/">Clues. Anomalies. Understanding. Detecting underlying assumptions and expected practices in the Digital Humanities through the AIME project</a>,
                published in Visible Language journal (49,3),
-               as the collaboration with <a href="http://www.medialab.sciences-po.fr/fr/people/donato-ricci/">Donato Ricci</a> and the team of
-               <a href="http://modesofexistence.org/">An Inquiry Into Modes of Existence project</a>
+               as the collaboration with <a href="http://www.medialab.sciences-po.fr/fr/people/donato-ricci/">Donato Ricci</a> and the team of <a href="http://modesofexistence.org/">An Inquiry Into Modes of Existence project</a>
               .
             </p>
             </section>
