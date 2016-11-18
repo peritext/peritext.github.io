@@ -46,5 +46,25 @@
   <div id="mount"></div>
   <!-- Loading Bundle -->
   <script type="text/javascript" src="./build/bundle.js"></script>
+
+  <script src="//f.vimeocdn.com/js/froogaloop2.min.js"></script>
+  <script>
+  ;(function(){
+    setTimeout(function(){
+      var iframe = document.getElementsByTagName('iframe')[0];
+        console.log(iframe);
+        var player = $f(iframe);
+
+        player.api('setVolume', 0);
+
+        console.log(player);
+
+        player.addEvent('ready', function() {
+          console.log('ready');
+            player.api('setVolume', 0);
+        });
+    }, 2000);
+  })();
+  </script>
 </body>
 </html>

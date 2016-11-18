@@ -20026,18 +20026,25 @@
 	            'section',
 	            { id: 'brand-container' },
 	            _react2.default.createElement('iframe', {
+	              id: 'vimeo_player',
 	              src: 'https://player.vimeo.com/video/157160996?title=0&byline=0&portrait=0&autoplay=1&showplayer=0',
 	              width: '100%',
 	              height: '100%',
 	              frameBorder: '0' }),
+	            _react2.default.createElement('div', { className: 'cache' }),
 	            _react2.default.createElement(
 	              'h1',
 	              null,
-	              'Peritext ',
 	              _react2.default.createElement(
 	                Link,
 	                { name: 'quoi' },
-	                ' \u2193 '
+	                'Peritext ',
+	                _react2.default.createElement(
+	                  'span',
+	                  { className: 'arrow' },
+	                  '\u2193'
+	                ),
+	                ' '
 	              ),
 	              _react2.default.createElement(
 	                'span',
@@ -20288,7 +20295,7 @@
 	                  { href: 'https://daringfireball.net/projects/markdown/syntax' },
 	                  'Markdown'
 	                ),
-	                ' et qui savent manipuler un terminal de lignes de commandes. Ceux-ci peuvent se rendre sur',
+	                ' et qui savent manipuler un terminal de lignes de commandes. Ceux-ci peuvent se rendre sur ',
 	                _react2.default.createElement(
 	                  'a',
 	                  { href: 'https://github.com/peritext/peritext' },
@@ -20319,7 +20326,7 @@
 	                  { href: 'https://daringfireball.net/projects/markdown/syntax' },
 	                  'Markdown language'
 	                ),
-	                ' and knowing how to manipulate a command lines terminal. These can go to the',
+	                ' and knowing how to manipulate a command lines terminal. These can go to the ',
 	                _react2.default.createElement(
 	                  'a',
 	                  { href: 'https://github.com/peritext/peritext' },
@@ -20357,7 +20364,7 @@
 	              _react2.default.createElement(
 	                'p',
 	                null,
-	                'Il a \xE9t\xE9 prototyp\xE9 une premi\xE8re fois pour la r\xE9alisation du compagnon num\xE9rique de l\'article',
+	                'Il a \xE9t\xE9 prototyp\xE9 une premi\xE8re fois pour la r\xE9alisation du compagnon num\xE9rique de l\'article ',
 	                _react2.default.createElement(
 	                  'a',
 	                  { href: 'http://modesofexistence.org/anomalies/' },
@@ -20394,7 +20401,7 @@
 	              _react2.default.createElement(
 	                'p',
 	                null,
-	                'It has been prototyped a first time for the realization of the digital companion of the article',
+	                'It has been prototyped a first time for the realization of the digital companion of the article ',
 	                _react2.default.createElement(
 	                  'a',
 	                  { href: 'http://modesofexistence.org/anomalies/' },
@@ -20406,7 +20413,7 @@
 	                  { href: 'http://www.medialab.sciences-po.fr/fr/people/donato-ricci/' },
 	                  'Donato Ricci'
 	                ),
-	                ' and the team of',
+	                ' and the team of ',
 	                _react2.default.createElement(
 	                  'a',
 	                  { href: 'http://modesofexistence.org/' },
@@ -20966,7 +20973,7 @@
 	exports.push([module.id, "@import url(https://fonts.googleapis.com/css?family=Roboto);", ""]);
 	
 	// module
-	exports.push([module.id, ".french {\n  color: DarkCyan; }\n\n.english {\n  color: DarkOliveGreen; }\n\na,\na:hover,\na:visited,\na:active {\n  text-decoration: none;\n  color: inherit; }\n\nhtml,\nbody,\n#mount,\n#mount > div {\n  font-family: 'Roboto', sans-serif;\n  width: 100%;\n  height: 100%;\n  min-height: 100%;\n  margin: 0;\n  padding: 0;\n  color: darkgrey;\n  background: white; }\n\nbody {\n  overflow-x: hidden; }\n\n#brand-wrapper {\n  display: flex;\n  overflow: hidden;\n  width: 100%;\n  height: 100%;\n  flex-flow: row nowrap;\n  align-items: center;\n  justify-content: center; }\n  #brand-wrapper #brand-container {\n    display: flex;\n    overflow: hidden;\n    width: 100%;\n    height: 100%;\n    flex-flow: column nowrap;\n    align-items: center;\n    justify-content: center; }\n    #brand-wrapper #brand-container iframe {\n      position: absolute;\n      top: 0;\n      left: 0;\n      width: 100%;\n      height: 100%; }\n    #brand-wrapper #brand-container h1 {\n      font-family: 'munro';\n      font-size: 10pc;\n      z-index: 2;\n      margin: 0;\n      padding: 1rem;\n      color: white;\n      background: darkblue; }\n      #brand-wrapper #brand-container h1 a {\n        font-family: 'munro';\n        font-size: 5rem;\n        position: relative;\n        top: -1rem;\n        padding: 1rem;\n        color: white;\n        background: darkblue; }\n      #brand-wrapper #brand-container h1 #subline {\n        margin-top: 2rem;\n        display: block;\n        font-size: 2.5rem;\n        font-family: 'Roboto', sans-serif;\n        font-weight: 400; }\n        #brand-wrapper #brand-container h1 #subline .secondary {\n          opacity: .5; }\n      @media (max-width: 768px) {\n        #brand-wrapper #brand-container h1 {\n          font-size: 1rem; }\n          #brand-wrapper #brand-container h1 a {\n            font-size: 1rem;\n            top: 0; } }\n\nheader {\n  line-height: 7.5rem;\n  display: flex;\n  width: 100%;\n  height: 80px;\n  padding: 0 1rem 2rem 1rem;\n  text-align: center;\n  text-transform: uppercase;\n  color: white;\n  background: darkblue;\n  backgound-color: #333;\n  flex-flow: row nowrap;\n  align-contents: space-between; }\n  header .logo {\n    font-family: 'munro'; }\n  header .logo,\n  header a {\n    font-size: 2.5rem;\n    font-weight: 800;\n    margin-right: 2rem;\n    -webkit-transition: all 0.2s;\n    -moz-transition: all 0.2s;\n    -ms-transition: all 0.2s;\n    -o-transition: all 0.2s;\n    transition: all 0.2s; }\n    header .logo .french,\n    header .logo .english,\n    header a .french,\n    header a .english {\n      color: inherit; }\n  @media (max-width: 768px) {\n    header {\n      overflow: hidden;\n      flex-flow: column nowrap; } }\n\n.sticky header {\n  position: relative;\n  top: 80px;\n  padding-top: 0;\n  padding-bottom: 1rem; }\n  .sticky header a,\n  .sticky header .logo {\n    font-size: 1.2rem; }\n\n.site-section {\n  display: flex;\n  padding-top: 5rem;\n  flex-flow: row nowrap; }\n  .site-section > section {\n    padding: 1rem;\n    flex: 1; }\n  .site-section a {\n    text-decoration: underline; }\n  .site-section p {\n    font-size: 1.2rem; }\n  .site-section:last-of-type {\n    padding-bottom: 20rem; }\n  .site-section ul {\n    font-size: 1.2rem;\n    padding: 1rem; }\n    .site-section ul li {\n      margin-bottom: 1rem; }\n  @media (max-width: 768px) {\n    .site-section {\n      flex-flow: column nowrap; } }\n\nfooter {\n  padding: 2rem;\n  color: white;\n  background: darkgrey; }\n  footer img {\n    max-width: 5rem;\n    max-height: 5rem; }\n\n::-webkit-scrollbar {\n  width: .7rem; }\n\n::-webkit-scrollbar-button {\n  /* 2 */ }\n\n::-webkit-scrollbar-track {\n  border-top: 1px solid darkblue !important;\n  border-bottom: 1px solid darkblue !important; }\n\n::-webkit-scrollbar-thumb {\n  background: darkblue !important; }\n\n::-webkit-scrollbar-corner {\n  /* 6 */ }\n\n::-webkit-resizer {\n  /* 7 */ }\n\nscrollbar {\n  /*  clear useragent default style*/\n  -moz-appearance: none !important; }\n\n/* buttons at two ends */\nscrollbarbutton {\n  -moz-appearance: none !important; }\n\n/* the sliding part*/\nthumb {\n  -moz-appearance: none !important; }\n\nscrollcorner {\n  resize: both;\n  -moz-appearance: none !important; }\n\n/* vertical or horizontal */\nscrollbar[orient='vertical'] {\n  color: darkblue !important; }\n", ""]);
+	exports.push([module.id, ".french {\n  color: DarkCyan; }\n\n.english {\n  color: DarkOliveGreen; }\n\na,\na:hover,\na:visited,\na:active {\n  text-decoration: none;\n  color: inherit; }\n\nhtml,\nbody,\n#mount,\n#mount > div {\n  font-family: 'Roboto', sans-serif;\n  width: 100%;\n  height: 100%;\n  min-height: 100%;\n  margin: 0;\n  padding: 0;\n  color: darkgrey;\n  background: white; }\n\nbody {\n  overflow-x: hidden; }\n\n#brand-wrapper {\n  display: flex;\n  overflow: hidden;\n  width: 100%;\n  height: 100%;\n  flex-flow: row nowrap;\n  align-items: center;\n  justify-content: center; }\n  #brand-wrapper #brand-container {\n    display: flex;\n    overflow: hidden;\n    width: 100%;\n    height: 100%;\n    flex-flow: column nowrap;\n    align-items: center;\n    justify-content: center; }\n    #brand-wrapper #brand-container iframe,\n    #brand-wrapper #brand-container .cache {\n      position: absolute;\n      top: 0;\n      left: 0;\n      width: 100%;\n      height: 100%; }\n    #brand-wrapper #brand-container .cache {\n      background: darkblue;\n      opacity: .5; }\n    #brand-wrapper #brand-container h1 {\n      font-family: 'munro';\n      font-size: 10pc;\n      z-index: 2;\n      margin: 0;\n      padding: 1rem;\n      color: white;\n      background: darkblue; }\n      #brand-wrapper #brand-container h1 .arrow {\n        font-family: 'munro';\n        font-size: 5rem;\n        position: relative;\n        top: -1rem;\n        padding: 1rem;\n        color: white;\n        background: darkblue; }\n      #brand-wrapper #brand-container h1 #subline {\n        margin-top: 2rem;\n        display: block;\n        font-size: 2.5rem;\n        font-family: 'Roboto', sans-serif;\n        font-weight: 400; }\n        #brand-wrapper #brand-container h1 #subline .secondary {\n          opacity: .5; }\n      @media (max-width: 768px) {\n        #brand-wrapper #brand-container h1 {\n          font-size: 1rem; }\n          #brand-wrapper #brand-container h1 a {\n            font-size: 1rem;\n            top: 0; } }\n\nheader {\n  line-height: 2.4rem;\n  display: flex;\n  width: 100%;\n  padding: 1rem 1rem 1rem 1rem;\n  text-align: center;\n  text-transform: uppercase;\n  color: white;\n  background: darkblue;\n  backgound-color: #333;\n  flex-flow: row nowrap;\n  align-contents: space-between; }\n  header .logo {\n    font-family: 'munro'; }\n  header .logo,\n  header a {\n    font-size: 1.2rem;\n    font-weight: 800;\n    margin-right: 2rem;\n    -webkit-transition: all 0.2s;\n    -moz-transition: all 0.2s;\n    -ms-transition: all 0.2s;\n    -o-transition: all 0.2s;\n    transition: all 0.2s; }\n    header .logo .french,\n    header .logo .english,\n    header a .french,\n    header a .english {\n      color: inherit; }\n  @media (max-width: 768px) {\n    header {\n      overflow: hidden;\n      flex-flow: column nowrap; } }\n\n.sticky header {\n  position: relative;\n  top: 4rem; }\n\n.site-section {\n  display: flex;\n  padding-top: 5rem;\n  flex-flow: row nowrap; }\n  .site-section > section {\n    padding: 1rem;\n    flex: 1; }\n  .site-section a {\n    text-decoration: underline; }\n  .site-section p {\n    font-size: 1.2rem; }\n  .site-section:last-of-type {\n    padding-bottom: 20rem; }\n  .site-section ul {\n    font-size: 1.2rem;\n    padding: 1rem; }\n    .site-section ul li {\n      margin-bottom: 1rem; }\n  @media (max-width: 768px) {\n    .site-section {\n      flex-flow: column nowrap; } }\n\nfooter {\n  padding: 2rem;\n  color: white;\n  background: darkgrey; }\n  footer img {\n    max-width: 5rem;\n    max-height: 5rem; }\n\n::-webkit-scrollbar {\n  width: .7rem; }\n\n::-webkit-scrollbar-button {\n  /* 2 */ }\n\n::-webkit-scrollbar-track {\n  border-top: 1px solid darkblue !important;\n  border-bottom: 1px solid darkblue !important; }\n\n::-webkit-scrollbar-thumb {\n  background: darkblue !important; }\n\n::-webkit-scrollbar-corner {\n  /* 6 */ }\n\n::-webkit-resizer {\n  /* 7 */ }\n\nscrollbar {\n  /*  clear useragent default style*/\n  -moz-appearance: none !important; }\n\n/* buttons at two ends */\nscrollbarbutton {\n  -moz-appearance: none !important; }\n\n/* the sliding part*/\nthumb {\n  -moz-appearance: none !important; }\n\nscrollcorner {\n  resize: both;\n  -moz-appearance: none !important; }\n\n/* vertical or horizontal */\nscrollbar[orient='vertical'] {\n  color: darkblue !important; }\n", ""]);
 	
 	// exports
 

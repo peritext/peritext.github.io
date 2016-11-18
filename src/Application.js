@@ -23,11 +23,13 @@ class Application extends Component {
         <section id="brand-wrapper">
           <section id="brand-container">
             <iframe
+              id="vimeo_player"
               src="https://player.vimeo.com/video/157160996?title=0&byline=0&portrait=0&autoplay=1&showplayer=0"
               width="100%"
               height="100%"
               frameBorder="0" />
-            <h1>Peritext <Link name="quoi"> ↓ </Link>
+            <div className="cache"/>
+            <h1><Link name="quoi">Peritext <span className="arrow">↓</span> </Link>
               <span id="subline">
             Publication / <span className="secondary">Context-oriented</span><br />
             Multimodale / <span className="secondary">Multimodal</span><br />

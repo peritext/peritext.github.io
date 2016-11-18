@@ -91,7 +91,8 @@ body
         flex-flow: column nowrap;
         align-items: center;
         justify-content: center;
-        iframe
+        iframe,
+        .cache
         {
             position: absolute;
             top: 0;
@@ -99,6 +100,10 @@ body
 
             width: 100%;
             height: 100%;
+        }
+        .cache{
+            background: $color-dark-bg;
+            opacity: .5;
         }
         h1
         {
@@ -112,7 +117,7 @@ body
 
             color: $color-light-bg;
             background: $color-dark-bg;
-            a
+            .arrow
             {
                 font-family: 'munro';
                 font-size: $fontsize-big;
@@ -153,13 +158,15 @@ body
 
 header
 {
-    line-height: $fontsize-medium*3;
+    line-height: $fontsize-normal*2;
 
     display: flex;
 
     width: 100%;
-    height: 80px;
-    padding: 0 $padding-medium $padding-large $padding-medium;
+    // height: 80px;
+    padding: $padding-medium $padding-medium $padding-medium $padding-medium;
+
+    // padding: 0 $padding-medium $padding-large $padding-medium;
 
     text-align: center;
     text-transform: uppercase;
@@ -177,7 +184,8 @@ header
     .logo,
     a
     {
-        font-size: $fontsize-medium;
+        font-size: $fontsize-normal;
+        // font-size: $fontsize-medium;
         font-weight: 800;
 
         margin-right: $padding-large;
@@ -202,14 +210,15 @@ header
     header
     {
         position: relative;
-        top: 80px;
+        top: $padding-medium * 4;
+        // top: 80px;
 
-        padding-top: 0;
-        padding-bottom: $padding-medium;
+        // padding-top: 0;
+        // padding-bottom: $padding-medium;
         a,
         .logo
         {
-            font-size: $fontsize-normal;
+            // font-size: $fontsize-normal;
         }
     }
 }
