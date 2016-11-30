@@ -52,13 +52,8 @@
   ;(function(){
     setTimeout(function(){
       var iframe = document.getElementsByTagName('iframe')[0];
-        console.log(iframe);
         var player = $f(iframe);
-
         player.api('setVolume', 0);
-
-        console.log(player);
-
         player.addEvent('ready', function() {
           console.log('ready');
             player.api('setVolume', 0);

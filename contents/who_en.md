@@ -1,0 +1,7 @@
+## Who can use Peritext ?
+
+Peritext is a design project that, yet, is not about designing an specific object, document or application. It is rather about developing technological modules that allow for design-related issues and questions to be raised in the context of usual academic publishing situations.
+
+In that sense, the publics of users of Peritext are meant to evolve as the project develops, from use cases demanding a very good knowledge of digital technologies, to more easily learnable and standardized use cases.
+
+For now, Peritext does not handle edition activities and is focused on the successful rendering of high quality multimodal documents from flatfile contents supposed to be as simple and interoperable as possible. That said, as the formats used by Peritext are highly mainstream concerning text (markdown) as resources description (BibTeX), this activity can be easily delegated to third-party software (like text files editors). Besides, because of these choices Peritext is a lightweight technology that does not require heavy infrasctructures or a centralized platform to run, and can be used at different levels of organization (individual authors, small organizations like research teams, institutions like libraries).

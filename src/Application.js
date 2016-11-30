@@ -1,5 +1,6 @@
 
 import React, {Component} from 'react';
+import ReactMarkdown from 'react-markdown';
 import {StickyContainer, Sticky} from 'react-sticky';
 const Section = require('react-scroll-nav').Section;
 const Link = require('react-scroll-nav').Link;
@@ -9,16 +10,31 @@ require('./style.scss');
 class Application extends Component {
   constructor(props) {
     super(props);
-    this.state = {};
+    this.state = {
+      activeLang: 'fr',
+      otherLang : 'switch to english'
+    };
+
+    this.toggleLang = this.toggleLang.bind(this);
   }
 
   shouldComponentUpdate() {
     return true;
   }
 
+  toggleLang() {
+    if (this.state.activeLang === 'fr') {
+      this.state.activeLang = 'en';
+      this.state.otherLang = 'basculer en français';
+    } else {
+      this.state.activeLang = 'fr';
+      this.state.otherLang = 'switch to english';
+    }
+    this.forceUpdate();
+  }
+
   render() {
     return (
-
       <StickyContainer id="wrapper">
         <section id="brand-wrapper">
           <section id="brand-container">
@@ -29,7 +45,7 @@ class Application extends Component {
               height="100%"
               frameBorder="0" />
             <div className="cache"/>
-            <h1><Link name="quoi">Peritext <span className="arrow">↓</span> </Link>
+            <h1><Link name="what">Peritext <span className="arrow">↓</span> </Link>
               <span id="subline">
             Publication / <span className="secondary">Context-oriented</span><br />
             Multimodale / <span className="secondary">Multimodal</span><br />
@@ -40,127 +56,147 @@ class Application extends Component {
         </section>
         <Sticky>
           <header id="menu" className={this.state.stickyMode ? 'active' : ''}>
-            <span className="logo">
-          Peritext
-        </span>
-            <Link name="quoi">
-              <span className="french">Quoi</span> / <span className="english">What</span>
-            </Link>
 
-            <Link name="comment">
-              <span className="french">Comment</span> / <span className="english">How</span>
+            <Link id="logo-link" name="brand-container">
+              <span className="logo">
+                Peritext
+              </span>
             </Link>
-
-            <Link name="qui">
-              <span className="french">Qui</span> / <span className="english">Who</span>
+            <Link name="why">
+              {
+                this.state.activeLang === 'fr' ?
+                  'Pourquoi' :
+                  'Why'
+              }
             </Link>
+            <Link name="what">
+              {
+                this.state.activeLang === 'fr' ?
+                  'Quoi' :
+                  'What'
+              }
+            </Link>
+            <Link name="who">
+              {
+                this.state.activeLang === 'fr' ?
+                  'Pour qui' :
+                  'For who'
+              }
+            </Link>
+            <Link name="how">
+              {
+                this.state.activeLang === 'fr' ?
+                  'Comment' :
+                  'How'
+              }
+            </Link>
+            <Link name="lang"><span onClick={this.toggleLang}>{this.state.otherLang}</span></Link>
           </header>
         </Sticky>
-        <Section name="quoi">
+
+        <Section name="why">
           <div className="site-section">
-            <section className="french">
-              <h2>Qu'est-ce que Peritext</h2>
-              <p>
-Peritext est un projet de design et développement visant à améliorer et faciliter la production de documents académiques présentant des visualisations interactives de données, des médias audio-visuels, et/ou des références enrichies, tout cela à la fois en version papier et web.
-            </p>
-              <p>
-Pour ce faire, il se fonde sur une proposition de modèle documentaire visant à repenser le rapport entre les textes et leur entours (références citées, données visualisées, références au web, ...) appelé RCC (Ressouces-Contextualiseurs-Contextualisations)
-            </p>
-              <p>
-Le modèle soutenu par Peritext assure une qualité documentaire et une rigueur argumentative très élevée, tout en concentrant l'attention des auteurs sur la présentation et la mise en forme éditoriale des contenus.
-            </p>
-              <p>Le projet se décline en plusieurs sous-projets, destinés à des publics différents :</p>
-              <ul>
-                <li>
-              Une <a href="https://github.com/peritext/peritext">bibliothèque de programmation</a> pouvant être utilisée par d'autres applications, ou comme un outil en lignes de commandes pour produire des documents pdf ou epub par exemple.
-              </li>
-                <li>
-              Une <a href="https://github.com/peritext/peritext-api">API Rest</a> pouvant simplement servir les données d'un document peritext sur le web
-              </li>
-                <li>
-              Une <a href="https://github.com/peritext/lectio">application web intitulée Lectio</a> représentant une implémentation parmi d'autres de Peritext dans une application web
-              </li>
-              </ul>
-            </section>
-            <section className="english">
-              <h2>What is Peritext</h2>
-              <p>
-Peritext is a design & development project  aiming at improving and facilitating the production of media-rich, data-driven and multimodal academic documents.
-            </p>
-              <p>
-            For this purpose, it is grounded on the proposal of a documentary model aiming at rethinking the links between texts and their surroundings (quoted references, visualized data, web references, ...) called RCC (Resources-Contextualizers-Contextualizations).
-            </p>
-              <p>
-The model proposed by Peritext insure a great documentary quality and argumentative rigorousness, while focusing authors' attention on the presentation and editorial setup of their contents.
-            </p>
-              <p>The project is declined into several subprojects, adapted to different needs and skills:</p>
-              <ul>
-                <li>
-              A <a href="https://github.com/peritext/peritext">javascript programming library</a> that can be used as a library in other applications, or as a command-line tool to produce pdf or epub files.
-              </li>
-                <li>
-              A <a href="https://github.com/peritext/peritext-api">Rest API</a> simply serving the data of a peritext document n the web
-              </li>
-                <li>
-              A <a href="https://github.com/peritext/lectio">web application named Lectio</a> representing an implementation (among others possible) of Peritext inside a web application.
-              </li>
-              </ul>
-            </section>
+            <ReactMarkdown source={
+              this.state.activeLang === 'fr' ?
+              require('raw!./../contents/why_fr.md') :
+              require('raw!./../contents/why_en.md')
+            }/>
           </div>
         </Section>
 
-        <Section name="comment">
+        <Section name="what">
           <div className="site-section">
-            <section className="french">
-              <h2>Comment l'utiliser</h2>
-              <p>
-              Pour l'instant, Peritext est réservé à des auteurs ayant un minimum de connaissance du langage <a href="https://daringfireball.net/projects/markdown/syntax">Markdown</a> et qui savent manipuler un terminal de lignes de commandes. Ceux-ci peuvent se rendre sur <a href="https://github.com/peritext/peritext">la page du code open source de la bibliothèque peritext</a>.
-            </p>
-              <p>Tutoriaux et documentation à venir ...</p>
-            </section>
-            <section className="english">
-              <h2>How to use it</h2>
-              <p>
-              Until now, Peritext is only accessible to authors having a basic understanding of the <a href="https://daringfireball.net/projects/markdown/syntax">Markdown language</a> and knowing how to manipulate a command lines terminal. These can go to the <a href="https://github.com/peritext/peritext">open source page of the Peritext library</a>.
-            </p>
-              <p>Tutorials and documentation to come ...</p>
-            </section>
+            <ReactMarkdown source={
+              this.state.activeLang === 'fr' ?
+              require('raw!./../contents/what_fr.md') :
+              require('raw!./../contents/what_en.md')
+            }/>
           </div>
         </Section>
 
-        <Section name="qui">
+        <Section name="who">
           <div className="site-section">
-            <section className="french">
-              <h2>Contexte du projet</h2>
+            <ReactMarkdown source={
+              this.state.activeLang === 'fr' ?
+              require('raw!./../contents/who_fr.md') :
+              require('raw!./../contents/who_en.md')
+            }/>
+          </div>
+        </Section>
+
+        <Section name="versions">
+          <div className="site-section versions-section">
+            <a target="blank" href="https://github.com/peritext/peritext" className="peritext-version">
+              <img src="res/peritext-lib.gif"/>
+              <h3>
+                Peritext.js
+              </h3>
               <p>
-              Le projet Peritext est conduit par Robin de Mourat dans le cadre d'un doctorat en esthétique pourtant sur la publication académique en sciences humaines.
-            </p>
+              {
+                  this.state.activeLang === 'fr' ?
+                    'Une bibliothèque de programmation en Javascript pouvant être utilisée par d\'autres applications - plutôt pour les développeurs et les designers' :
+                    'A javascript programming library that can be used by other applications - rather for developers and designers'
+                }
+              </p>
+            </a>
+            <a target="blank" href="https://github.com/peritext/peritext-cli" className="peritext-version">
+              <img src="res/peritext-cli.gif"/>
+              <h3>
+                Peritext-cli
+              </h3>
               <p>
-            Il a été prototypé une première fois pour la réalisation du compagnon numérique de l'article <a href="http://modesofexistence.org/anomalies/">Clues. Anomalies. Understanding. Detecting underlying assumptions and expected practices in the Digital Humanities through the AIME project</a>,
-              publié dans la revue Visible Language (49,3),
-              à l'occasion d'une collaboration avec <a href="http://www.medialab.sciences-po.fr/fr/people/donato-ricci/">Donato Ricci</a> et
-              l'équipe du projet <a href="http://modesofexistence.org/">Une Enquête sur les modes d'existence</a>.
-            </p>
-            </section>
-            <section className="english">
-              <h2>Project context</h2>
+                {
+                  this.state.activeLang === 'fr' ?
+                    'Une application en ligne de commandes pour générer des documents pdf ou epub par exemple - plutôt pour les auteurs disposant d\’une bonne compétence technique' :
+                    'A command-line application that is aimed at generating pdf or epub documents - rather for authors with good technological skills'
+                }
+              </p>
+            </a>
+            <a target="blank" href="https://github.com/peritext/peritext-api" className="peritext-version">
+              <img src="res/peritext-api.gif"/>
+              <h3>
+                Peritext API
+              </h3>
               <p>
-              Peritext project is lead by Robin de Mourat in the frame of his PhD in digital aesthetics which deals with digital academic publishing.
-            </p>
+                {
+                  this.state.activeLang === 'fr' ?
+                    'Une application pour serveur servant les données d\'un document peritext sur le web pour des applications tierces - plutôt pour les institutions et les organisations' :
+                    'A server-side applicatino serving the data of a peritext document on the web for third-party applications or use - rather for institutions and organizations'
+                }
+              </p>
+            </a>
+            <a target="blank" href="https://github.com/peritext/lectio" className="peritext-version">
+              <img src="res/peritext-lectio.gif"/>
+              <h3>
+                Lectio
+              </h3>
               <p>
-               It has been prototyped a first time for the realization of the digital companion of the article <a href="http://modesofexistence.org/anomalies/">Clues. Anomalies. Understanding. Detecting underlying assumptions and expected practices in the Digital Humanities through the AIME project</a>,
-               published in Visible Language journal (49,3),
-               as the collaboration with <a href="http://www.medialab.sciences-po.fr/fr/people/donato-ricci/">Donato Ricci</a> and the team of <a href="http://modesofexistence.org/">An Inquiry Into Modes of Existence project</a>
-              .
-            </p>
-            </section>
+                {
+                  this.state.activeLang === 'fr' ?
+                    'Une application web représentant une implémentation possible parmi d\'autres de Peritext dans une application web - pour les particuliers et un usage quasi direct' :
+                    'A web application representing a possible implementation of Peritext in a web application - for individuals and available for direct use'
+                }
+              </p>
+            </a>
+          </div>
+        </Section>
+
+        <Section name="how">
+          <div className="site-section">
+            <ReactMarkdown source={
+              this.state.activeLang === 'fr' ?
+              require('raw!./../contents/how_fr.md') :
+              require('raw!./../contents/how_en.md')
+            }/>
           </div>
         </Section>
 
         <footer>
-          <img src="/src/img/logoUR2.png" />
           <p>
-        La bibliothèque Peritext est placé sous <a href="https://github.com/peritext/peritext/blob/master/LICENSE.md">license GNU</a>
+            Les différentes technologies de Peritext sont placée sous <a href="https://github.com/peritext/peritext/blob/master/LICENSE.md">license GNU</a>.
+          </p>
+          <p>
+            Pour plus d'informations, contacter Robin de Mourat : robin.demourat@gmail.com
           </p>
         </footer>
       </StickyContainer>

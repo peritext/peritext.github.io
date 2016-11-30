@@ -1,14 +1,14 @@
 @import './fonts/stylesheet.css';
-@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+@import url(https://fonts.googleapis.com/css?family=Crimson+Text);
 $color-light-bg: white;
 $color-dark-bg: darkblue;
-$color-dark-text: darkgrey;
-$color-text-fr: DarkCyan;
-$color-text-en: DarkOliveGreen;
+$color-dark-text: darkblue;
+$padding-small: .5rem;
 $padding-medium: 1rem;
 $padding-large: 2rem;
 $fontsize-small: .8rem;
-$fontsize-normal: 1.2rem;
+$fontsize-normal: 1.3rem;
 $fontsize-medium: 2.5rem;
 $fontsize-big: 5rem;
 $fontsize-very-big: 10pc;
@@ -24,18 +24,6 @@ $breakpoint-tablet: only screen and (min-width : 768px) and (max-width : 1224px)
          -o-transition: $args;
             transition: $args;
 }
-
-
-.french
-{
-    color: $color-text-fr;
-}
-
-.english
-{
-    color: $color-text-en;
-}
-
 a,
 a:hover,
 a:visited,
@@ -46,16 +34,20 @@ a:active
     color: inherit;
 }
 
+img{
+    max-width: 100%;
+}
+
 html,
 body,
 #mount,
 #mount > div
 {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Crimson Text', sans-serif;
 
     width: 100%;
     height: 100%;
-    min-height: 100%;
+    // min-height: 100%;
     margin: 0;
     padding: 0;
 
@@ -80,6 +72,11 @@ body
     flex-flow: row nowrap;
     align-items: center;
     justify-content: center;
+
+    @media #{$breakpoint-phone}
+    {
+        height: 100%;
+    }
     #brand-container
     {
         display: flex;
@@ -91,6 +88,8 @@ body
         flex-flow: column nowrap;
         align-items: center;
         justify-content: center;
+
+
         iframe,
         .cache
         {
@@ -101,9 +100,10 @@ body
             width: 100%;
             height: 100%;
         }
-        .cache{
-            background: $color-dark-bg;
+        .cache
+        {
             opacity: .5;
+            background: $color-dark-bg;
         }
         h1
         {
@@ -130,24 +130,38 @@ body
                 color: $color-light-bg;
                 background: $color-dark-bg;
             }
+            #subline
+            {
+                font-family: 'Roboto', sans-serif;
+                font-size: $fontsize-medium;
+                font-weight: 400;
 
-            #subline{
-              margin-top : $padding-large;
-              display: block;
-              font-size: $fontsize-medium;
-              font-family: 'Roboto', sans-serif;
-              font-weight: 400;
-              .secondary{
-                opacity: .5;
-              }
+                display: block;
+
+                margin-top: $padding-large;
+                .secondary
+                {
+                    opacity: .5;
+                }
             }
             @media #{$breakpoint-phone}
             {
+                width: 100%;
+                height: 95%;
+                position: absolute;
+                left: 0;
+                top: 0;
                 font-size: 1rem;
                 a
                 {
-                    font-size: 1rem;
+                    font-size: 4.5rem;
 
+                    top: 0;
+                }
+
+                .arrow{
+                    font-size: 4.5rem;
+                    padding: 0;
                     top: 0;
                 }
             }
@@ -164,8 +178,7 @@ header
 
     width: 100%;
     // height: 80px;
-    padding: $padding-medium $padding-medium $padding-medium $padding-medium;
-
+    padding: $padding-small $padding-medium $padding-small $padding-medium;
     // padding: 0 $padding-medium $padding-large $padding-medium;
 
     text-align: center;
@@ -177,25 +190,39 @@ header
     backgound-color: #333;
     flex-flow: row nowrap;
     align-contents: space-between;
-    .logo
-    {
-        font-family: 'munro';
-    }
-    .logo,
     a
     {
-        font-size: $fontsize-normal;
+        font-size: 1rem;
         // font-size: $fontsize-medium;
         font-weight: 800;
 
-        margin-right: $padding-large;
+        margin-right: $padding-medium;
+
 
         @include transition(all .2s);
-        .french,
-        .english
-        {
-            color: inherit;
+
+        position : relative;
+
+        &::after{
+            position: absolute;
+            content: '';
+            display: inline-block;
+            left: 0;
+            top: 2rem;
+            border-bottom: 1px white solid;
+            width : 0;
+            @include transition(all .2s);
         }
+
+        &:not(#logo-link):hover::after{
+            width: 100%;
+        }
+    }
+    .logo
+    {
+        font-family: 'munro';
+        font-size : 1.3rem;
+        margin-right:  $padding-medium;
     }
     @media #{$breakpoint-phone}
     {
@@ -210,9 +237,8 @@ header
     header
     {
         position: relative;
-        top: $padding-medium * 4;
+        top: $padding-small * 7;
         // top: 80px;
-
         // padding-top: 0;
         // padding-bottom: $padding-medium;
         a,
@@ -224,11 +250,31 @@ header
 }
 
 
+.site-section,
+header,
+footer
+{
+    padding-left : 25%;
+    padding-right: 25%;
+
+    @media #{$breakpoint-tablet}
+    {
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+
+    @media #{$breakpoint-phone}
+    {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+}
+
 .site-section
 {
     display: flex;
 
-    padding-top: 5rem;
+    padding-top: 3rem;
 
     flex-flow: row nowrap;
     > section
@@ -245,10 +291,6 @@ header
     {
         font-size: $fontsize-normal;
     }
-    &:last-of-type
-    {
-        padding-bottom: 20rem;
-    }
     ul
     {
         font-size: $fontsize-normal;
@@ -263,11 +305,73 @@ header
     {
         flex-flow: column nowrap;
     }
+    &.versions-section
+    {
+        display: flex;
+
+        flex-flow: column nowrap;
+        align-items: center;
+        justify-content: center;
+        // padding: 2rem;
+
+        @media #{$breakpoint-phone}
+        { 
+            flex-flow: column nowrap;
+        }
+
+        .peritext-version
+        {
+            display: flex;
+
+            text-align: center;
+
+            flex-flow: column nowrap;
+            align-items: center;
+            justify-content: center;
+
+            cursor: pointer;
+
+            padding: 0 1rem 0 1rem;
+
+            text-decoration : none;
+
+            &:hover
+            {
+                background: lightgrey;
+            }
+            img
+            {
+                margin-bottom: 1rem;
+                max-width : 6rem;
+                margin-left : -1rem;
+            }
+            h3
+            {
+                display: block;
+                text-align: center;
+                padding-left : 0rem;
+                margin-bottom: .3rem;
+                font-size: 1.5rem;
+                text-transform: uppercase;
+                font-weight : 900;
+            }
+            p{
+                font-style: italic;
+                font-size :1rem;
+                max-width: 20rem;
+                text-align: left;
+                // padding-left: 3rem;
+            }
+        }
+    }
 }
 
 footer
 {
-    padding: $padding-large;
+    margin-top : 10rem;
+
+    padding-top : $padding-large;
+    padding-bottom: $padding-large;
 
     color: $color-light-bg;
     background: $color-dark-text;
