@@ -10,8 +10,11 @@ require('./style.scss');
 class Application extends Component {
   constructor(props) {
     super(props);
+
+    const lang = window.navigator.userLanguage || window.navigator.language;
+    const langStart = lang === 'fr' ? 'fr' : 'en';
     this.state = {
-      activeLang: 'fr',
+      activeLang: langStart,
       otherLang : 'switch to english'
     };
 
