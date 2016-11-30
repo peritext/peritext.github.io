@@ -22577,8 +22577,10 @@
 	
 	    var _this = _possibleConstructorReturn(this, (Application.__proto__ || Object.getPrototypeOf(Application)).call(this, props));
 	
+	    var lang = window.navigator.userLanguage || window.navigator.language;
+	    var langStart = lang === 'fr' ? 'fr' : 'en';
 	    _this.state = {
-	      activeLang: 'fr',
+	      activeLang: langStart,
 	      otherLang: 'switch to english'
 	    };
 	
