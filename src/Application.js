@@ -164,7 +164,7 @@ class Application extends Component {
                 {
                   this.state.activeLang === 'fr' ?
                     'Une application pour serveur servant les données d\'un document peritext sur le web pour des applications tierces - plutôt pour les institutions et les organisations' :
-                    'A server-side applicatino serving the data of a peritext document on the web for third-party applications or use - rather for institutions and organizations'
+                    'A server-side application serving the data of a peritext document on the web for third-party applications or use - rather for institutions and organizations'
                 }
               </p>
             </a>
@@ -195,11 +195,22 @@ class Application extends Component {
         </Section>
 
         <footer>
+          {
+            this.state.activeLang === 'en' ?
+              <p>
+                Peritext library is licensed under the <a target="blank" href="https://github.com/peritext/peritext/blob/master/LICENSE.LGPL">GNU LGPL 3</a> and  <a target="blank" href="https://github.com/peritext/peritext/blob/master/LICENSE.CECCIL-C">CECCIL-C</a> licenses.
+              </p> :
+              <p>
+                La bibliothèque Peritext est placée sous les licenses <a target="blank" href="https://github.com/peritext/peritext/blob/master/LICENSE.LGPL">GNU LGPL 3</a> et  <a target="blank" href="https://github.com/peritext/peritext/blob/master/LICENSE.CECCIL-C">CECCIL-C</a>.
+              </p>
+          }
           <p>
-            Les différentes technologies de Peritext sont placée sous <a href="https://github.com/peritext/peritext/blob/master/LICENSE.md">license GNU</a>.
-          </p>
-          <p>
-            Pour plus d'informations, contacter Robin de Mourat : robin.demourat@gmail.com
+            <a target="blank" href="https://github.com/peritext">
+              <img src="res/github.svg"/>
+            </a>
+            <a href="https://twitter.com/robindemourat" target="blank">
+              <img src="res/twitter.svg"/>
+            </a>
           </p>
         </footer>
       </StickyContainer>

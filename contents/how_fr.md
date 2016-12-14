@@ -1,3 +1,3 @@
 ## Comment utiliser Peritext ?
 
-Tutoriaux et documentation à venir ...
+Rendez-vous sur le [wiki de Peritext](https://github.com/peritext/peritext/wiki/Peritext-wiki-documentation)
