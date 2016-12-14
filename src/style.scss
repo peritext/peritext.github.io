@@ -4,6 +4,7 @@
 $color-light-bg: white;
 $color-dark-bg: darkblue;
 $color-dark-text: darkblue;
+$color-footer-bg: #f7f4f7;
 $padding-small: .5rem;
 $padding-medium: 1rem;
 $padding-large: 2rem;
@@ -184,8 +185,8 @@ header
     text-align: center;
     text-transform: uppercase;
 
-    color: $color-light-bg;
-    background: $color-dark-bg;
+    color: $color-dark-bg;
+    background: $color-light-bg;
 
     backgound-color: #333;
     flex-flow: row nowrap;
@@ -335,6 +336,12 @@ footer
 
             text-decoration : none;
 
+            width : 100%;
+
+            margin-bottom: 1rem;
+
+            background: $color-footer-bg;
+
             &:hover
             {
                 background: lightgrey;
@@ -373,12 +380,27 @@ footer
     padding-top : $padding-large;
     padding-bottom: $padding-large;
 
-    color: $color-light-bg;
-    background: $color-dark-text;
+    color: $color-dark-text;
+    background : $color-footer-bg;
+
+
     img
     {
         max-width: 5rem;
         max-height: 5rem;
+    }
+
+    a{
+        img{
+            width: 1rem;
+            height: 1rem;
+            margin-right : 1rem;
+            opacity: .7;
+            filter: grayscale(100);
+            &:hover{
+                opacity: 1;
+            }
+        }
     }
 }
 
