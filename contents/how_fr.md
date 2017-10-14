@@ -1,3 +1,3 @@
-## Comment utiliser Peritext ?
+## Peut-on utiliser Peritext ?
 
-Rendez-vous sur le [wiki de Peritext](https://github.com/peritext/peritext/wiki/Peritext-wiki-documentation)
+Peritext n'est pas encore utilisable en contextes de production, car son format est instable & nécessite encore quelques coups de pinceaux ! revenez bientôt ...

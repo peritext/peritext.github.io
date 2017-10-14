@@ -44,7 +44,7 @@ body,
 #mount,
 #mount > div
 {
-    font-family: 'Crimson Text', sans-serif;
+    font-family: Merriweather, sans-serif;
 
     width: 100%;
     height: 100%;
@@ -133,7 +133,7 @@ body
             }
             #subline
             {
-                font-family: 'Roboto', sans-serif;
+                font-family: Merriweather, sans-serif;
                 font-size: $fontsize-medium;
                 font-weight: 400;
 
@@ -239,6 +239,7 @@ header
     {
         position: relative;
         top: $padding-small * 7;
+        background: white;
         // top: 80px;
         // padding-top: 0;
         // padding-bottom: $padding-medium;
@@ -291,6 +292,7 @@ footer
     p
     {
         font-size: $fontsize-normal;
+        line-height: $fontsize-normal*1.55;
     }
     ul
     {

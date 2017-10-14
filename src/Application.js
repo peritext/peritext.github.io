@@ -129,20 +129,46 @@ class Application extends Component {
 
         <Section name="versions">
           <div className="site-section versions-section">
-            <a target="blank" href="https://github.com/peritext/peritext" className="peritext-version">
-              <img src="res/peritext-lib.gif"/>
+            <a target="blank" href="https://github.com/peritext/peritext-core" className="peritext-version">
+              <img src="res/peritext-api.gif"/>
               <h3>
-                Peritext.js
+                Peritext core
               </h3>
               <p>
               {
                   this.state.activeLang === 'fr' ?
-                    'Une bibliothèque de programmation en Javascript pouvant être utilisée par d\'autres applications - plutôt pour les développeurs et les designers' :
-                    'A javascript programming library that can be used by other applications - rather for developers and designers'
+                    'Le coeur de Peritext est un module de spécification technique décrivant comment représenter un document multimodal' :
+                    'The core of Peritext is a technical specification module describing how to represent a multimodal document'
                 }
               </p>
             </a>
-            <a target="blank" href="https://github.com/peritext/peritext-cli" className="peritext-version">
+            <a target="blank" href="https://github.com/peritext" className="peritext-version">
+              <img src="res/peritext-lib.gif"/>
+              <h3>
+                Peritext - modules
+              </h3>
+              <p>
+              {
+                  this.state.activeLang === 'fr' ?
+                    'Les modules de Peritext sont constitués de générateurs, de contextualiseurs, et de gabarits visuels et interactifs.' :
+                    'Peritext modules are constituted of generators, contextualizers, and visual templates'
+                }
+              </p>
+            </a>
+            <a target="blank" href="https://github.com/peritext/peritext-old" className="peritext-version">
+              <img src="res/peritext-cli.gif"/>
+              <h3>
+                Peritext.js (deprecated)
+              </h3>
+              <p>
+              {
+                  this.state.activeLang === 'fr' ?
+                    'La première version de Peritext sous la forme d\'une unique bibliothèque de programmation en Javascript pouvant être utilisée par d\'autres applications - plutôt pour les développeurs et les designers' :
+                    'The first version of peritext as a single javascript programming library that can be used by other applications - rather for developers and designers'
+                }
+              </p>
+            </a>
+            {/*<a target="blank" href="https://github.com/peritext/peritext-cli" className="peritext-version">
               <img src="res/peritext-cli.gif"/>
               <h3>
                 Peritext-cli
@@ -180,7 +206,7 @@ class Application extends Component {
                     'A web application representing a possible implementation of Peritext in a web application - for individuals and available for direct use'
                 }
               </p>
-            </a>
+            </a>*/}
           </div>
         </Section>
 
@@ -198,10 +224,10 @@ class Application extends Component {
           {
             this.state.activeLang === 'en' ?
               <p>
-                Peritext library is licensed under the <a target="blank" href="https://github.com/peritext/peritext/blob/master/LICENSE.LGPL">GNU LGPL 3</a> and  <a target="blank" href="https://github.com/peritext/peritext/blob/master/LICENSE.CECCIL-C">CECCIL-C</a> licenses.
+                Peritext.js library is licensed under the <a target="blank" href="https://github.com/peritext/peritext/blob/master/LICENSE.LGPL">GNU LGPL 3</a> and  <a target="blank" href="https://github.com/peritext/peritext-old/blob/master/LICENSE.CECCIL-C">CECCIL-C</a> licenses.
               </p> :
               <p>
-                La bibliothèque Peritext est placée sous les licenses <a target="blank" href="https://github.com/peritext/peritext/blob/master/LICENSE.LGPL">GNU LGPL 3</a> et  <a target="blank" href="https://github.com/peritext/peritext/blob/master/LICENSE.CECCIL-C">CECCIL-C</a>.
+                La bibliothèque Peritext.js est placée sous les licenses <a target="blank" href="https://github.com/peritext/peritext/blob/master/LICENSE.LGPL">GNU LGPL 3</a> et  <a target="blank" href="https://github.com/peritext/peritext-old/blob/master/LICENSE.CECCIL-C">CECCIL-C</a>.
               </p>
           }
           <p>
