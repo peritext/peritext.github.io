@@ -1,3 +1,0 @@
-## Can Peritext be used ?
-
-Peritext cannot yet be used in production contexts right now, as its format is still instable and needs a few more pencil brushes ! Come back here soon ...

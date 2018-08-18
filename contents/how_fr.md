@@ -1,3 +1,0 @@
-## Peut-on utiliser Peritext ?
-
-Peritext n'est pas encore utilisable en contextes de production, car son format est instable & nécessite encore quelques coups de pinceaux ! revenez bientôt ...
