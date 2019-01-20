@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 15.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="1280px" height="800px" viewBox="0 0 1280 800" enable-background="new 0 0 1280 800" xml:space="preserve">
+<g>
+	<text transform="matrix(1 0 0 1 939.0771 174.4053)" font-family="'Roboto-Bold'" font-size="28">Contextualisation</text>
+</g>
+<g>
+	<text transform="matrix(1 0 0 1 506.0703 174.4053)" font-family="'Roboto-Bold'" font-size="28">Contextualiseur</text>
+</g>
+<text transform="matrix(1 0 0 1 106.5811 174.4053)" font-family="'Roboto-Bold'" font-size="28">Ressource</text>
+<text transform="matrix(1 0 0 1 434.1309 581.0801)" fill="#938D85" font-family="'Calibri-Italic'" font-size="20">...</text>
+<rect x="122.131" y="362.459" fill="none" width="217.489" height="293.985"/>
+<text transform="matrix(1 0 0 1 122.1309 376.1699)"><tspan x="0" y="0" font-family="'Roboto-Italic'" font-size="18">Exemples :</tspan><tspan x="0" y="43.2" font-family="'Roboto-Regular'" font-size="18">Source de données</tspan><tspan x="0" y="86.4" font-family="'Roboto-Regular'" font-size="18">Notice bibliographique</tspan><tspan x="0" y="129.6" font-family="'Roboto-Regular'" font-size="18">Entité (personne, lieu,  </tspan><tspan x="0" y="151.2" font-family="'Roboto-Regular'" font-size="18">évènement,...)</tspan></text>
+<rect x="556.232" y="362.459" fill="none" width="217.488" height="293.985"/>
+<text transform="matrix(1 0 0 1 556.2319 376.1699)"><tspan x="0" y="0" font-family="'Roboto-Italic'" font-size="18">Exemples </tspan><tspan x="82.213" y="0" font-family="'Roboto-Regular'" font-size="18">:</tspan><tspan x="0" y="43.2" font-family="'Roboto-Regular'" font-size="18">Paramètre de visualisation</tspan><tspan x="0" y="86.4" font-family="'Roboto-Regular'" font-size="18">Citation avec n° de page</tspan><tspan x="0" y="129.6" font-family="'Roboto-Regular'" font-size="18">Mention de glossaire</tspan></text>
+<g>
+	<polygon fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" points="198.075,217 122,217 122,340 222,340 
+		222,246.812 	"/>
+	<g>
+		<path d="M178.154,278.143c-0.07,1.703-0.57,3.172-1.5,4.406s-2.32,1.852-4.172,1.852c-0.609,0-1.137-0.172-1.582-0.516
+			s-0.762-0.824-0.949-1.441c-0.344,0.641-0.771,1.121-1.283,1.441s-1.111,0.48-1.799,0.48c-1.102,0-1.947-0.465-2.537-1.395
+			s-0.807-2.16-0.65-3.691c0.195-1.984,0.756-3.574,1.682-4.77s2.049-1.793,3.369-1.793c0.906,0,1.635,0.102,2.186,0.305
+			s1.154,0.516,1.811,0.938l-0.035,0.047h0.059l-0.598,6.715c-0.055,0.742,0,1.25,0.164,1.523s0.387,0.41,0.668,0.41
+			c0.898,0,1.619-0.426,2.162-1.277s0.846-1.93,0.908-3.234c0.125-2.758-0.408-4.91-1.6-6.457s-3.033-2.32-5.525-2.32
+			c-2.367,0-4.258,0.832-5.672,2.496s-2.18,3.895-2.297,6.691c-0.133,2.773,0.438,4.961,1.711,6.562s3.105,2.402,5.496,2.402
+			c0.664,0,1.35-0.078,2.057-0.234s1.314-0.352,1.822-0.586l0.445,1.723c-0.523,0.328-1.189,0.584-1.998,0.768
+			s-1.6,0.275-2.373,0.275c-3.094,0-5.479-0.973-7.154-2.918s-2.447-4.609-2.314-7.992c0.141-3.336,1.139-6.006,2.994-8.01
+			s4.299-3.006,7.33-3.006c3.023,0,5.34,0.947,6.949,2.842S178.279,274.861,178.154,278.143z M166.318,279.279
+			c-0.078,0.992-0.006,1.744,0.217,2.256s0.584,0.768,1.084,0.768c0.438,0,0.834-0.102,1.189-0.305s0.674-0.578,0.955-1.125
+			c0-0.031,0-0.057,0-0.076s0.004-0.045,0.012-0.076l0.516-5.812c-0.18-0.055-0.359-0.098-0.539-0.129s-0.367-0.047-0.562-0.047
+			c-0.867,0-1.527,0.377-1.98,1.131S166.459,277.756,166.318,279.279z"/>
+	</g>
+</g>
+<g>
+	<text transform="matrix(1 0 0 1 586.4658 285.333)" font-family="'Roboto-Bold'" font-size="24">{...}</text>
+	<circle fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" cx="603.8" cy="277" r="53.667"/>
+</g>
+<g>
+	<rect x="969" y="218" fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" width="176" height="123"/>
+	<circle fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" cx="1020.462" cy="258.667" r="17.333"/>
+	<circle fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" cx="1072.463" cy="310.667" r="10"/>
+	<circle fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" cx="1101.129" cy="255.334" r="15.333"/>
+	
+		<line fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" x1="1076.656" y1="301.598" x2="1092.782" y2="268.193"/>
+	
+		<line fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" x1="1037.795" y1="258.667" x2="1085.796" y2="255.334"/>
+</g>
+<line fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" x1="1011" y1="362" x2="1116" y2="362"/>
+<line fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" x1="997" y1="376" x2="1116" y2="376"/>
+<line fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" x1="997" y1="390" x2="1116" y2="390"/>
+<line fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" x1="997" y1="404" x2="1116" y2="404"/>
+<line fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" x1="997" y1="418" x2="1116" y2="418"/>
+<line fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" x1="997" y1="432" x2="1116" y2="432"/>
+<line fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" x1="997" y1="446" x2="1116" y2="446"/>
+<line fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" x1="997" y1="460" x2="1116" y2="460"/>
+<line fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" x1="997" y1="474" x2="1116" y2="474"/>
+<line fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" x1="1011" y1="488" x2="1116" y2="488"/>
+<line fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" x1="997" y1="502" x2="1116" y2="502"/>
+<line fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" x1="997" y1="516" x2="1116" y2="516"/>
+<line fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" x1="997" y1="530" x2="1116" y2="530"/>
+<line fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" x1="997" y1="544" x2="1116" y2="544"/>
+<line fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" x1="1011" y1="572" x2="1116" y2="572"/>
+<line fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" x1="1011" y1="586" x2="1116" y2="586"/>
+<line fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" x1="1011" y1="600" x2="1116" y2="600"/>
+<line fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" x1="1011" y1="614" x2="1116" y2="614"/>
+<line fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" x1="1011" y1="628" x2="1116" y2="628"/>
+<line fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" x1="1011" y1="642" x2="1116" y2="642"/>
+<text transform="matrix(1 0 0 1 995.168 573)"><tspan x="0" y="0" font-family="'Roboto-Regular'" font-size="10">1</tspan><tspan x="0" y="11.5" font-family="'Roboto-Regular'" font-size="10">2</tspan><tspan x="0" y="23" font-family="'Roboto-Regular'" font-size="10">3</tspan><tspan x="0" y="34.5" font-family="'Roboto-Regular'" font-size="10">4 </tspan><tspan x="0" y="46" font-family="'Roboto-Regular'" font-size="10">5 </tspan><tspan x="0" y="57.5" font-family="'Roboto-Regular'" font-size="10">6</tspan><tspan x="0" y="69" font-family="'Roboto-Regular'" font-size="10">7</tspan></text>
+<g>
+	<g>
+		<line fill="none" stroke="#000000" stroke-miterlimit="10" x1="231" y1="280.5" x2="237" y2="280.5"/>
+		<line fill="none" stroke="#000000" stroke-miterlimit="10" stroke-dasharray="12,12" x1="250" y1="280.5" x2="518" y2="280.5"/>
+		<line fill="none" stroke="#000000" stroke-miterlimit="10" x1="524" y1="280.5" x2="530" y2="280.5"/>
+		<g>
+			<polygon points="526.733,284.59 526.051,283.857 529.663,280.501 526.051,277.144 526.733,276.411 531.131,280.501 			"/>
+		</g>
+	</g>
+</g>
+<g>
+	<g>
+		<line fill="none" stroke="#000000" stroke-miterlimit="10" x1="675" y1="280.5" x2="681" y2="280.5"/>
+		<line fill="none" stroke="#000000" stroke-miterlimit="10" stroke-dasharray="12,12" x1="693" y1="280.5" x2="946" y2="280.5"/>
+		<line fill="none" stroke="#000000" stroke-miterlimit="10" x1="952" y1="280.5" x2="958" y2="280.5"/>
+		<g>
+			<polygon points="954.803,284.59 954.121,283.857 957.732,280.501 954.121,277.144 954.803,276.411 959.201,280.501 			"/>
+		</g>
+	</g>
+</g>
+<g>
+	<g>
+		<line fill="none" stroke="#000000" stroke-miterlimit="10" x1="286" y1="418.5" x2="530" y2="418.5"/>
+		<g>
+			<polygon points="526.733,422.59 526.051,421.857 529.663,418.501 526.051,415.144 526.733,414.411 531.131,418.501 			"/>
+		</g>
+	</g>
+</g>
+<g>
+	<g>
+		<line fill="none" stroke="#000000" stroke-miterlimit="10" x1="318" y1="460.5" x2="530" y2="460.5"/>
+		<g>
+			<polygon points="526.733,464.59 526.051,463.857 529.663,460.501 526.051,457.144 526.733,456.411 531.131,460.501 			"/>
+		</g>
+	</g>
+</g>
+<g>
+	<g>
+		<line fill="none" stroke="#000000" stroke-miterlimit="10" x1="318" y1="502.5" x2="530" y2="502.5"/>
+		<g>
+			<polygon points="526.733,506.59 526.051,505.857 529.663,502.501 526.051,499.144 526.733,498.411 531.131,502.501 			"/>
+		</g>
+	</g>
+</g>
+<g>
+	<g>
+		<path fill="none" stroke="#000000" stroke-miterlimit="10" d="M778.213,418c98.356,0,124.65-115.824,179.908-117.318"/>
+		<g>
+			<polygon points="955.019,304.977 954.3,304.281 957.735,300.743 953.955,297.576 954.6,296.81 959.201,300.668 			"/>
+		</g>
+	</g>
+</g>
+<line fill="none" stroke="#000000" stroke-width="6" stroke-miterlimit="10" x1="1043" y1="418" x2="1077" y2="418"/>
+<line fill="none" stroke="#000000" stroke-width="6" stroke-miterlimit="10" x1="1006" y1="460" x2="1040" y2="460"/>
+<g>
+	<g>
+		<path fill="none" stroke="#000000" stroke-miterlimit="10" d="M757.465,460c112.126,0,206.423-65.368,278.951-47.268"/>
+		<g>
+			<polygon points="1032.281,416.032 1031.774,415.169 1036.031,412.681 1033.239,408.616 1034.064,408.051 1037.465,413.001 			"/>
+		</g>
+	</g>
+</g>
+<g>
+	<g>
+		<path fill="none" stroke="#000000" stroke-miterlimit="10" d="M731.464,502c235.347,0,237.645-65.911,268.415-47.567"/>
+		<g>
+			<polygon points="994.967,456.438 994.727,455.467 999.514,454.288 997.988,449.599 998.939,449.29 1000.797,455.001 			"/>
+		</g>
+	</g>
+</g>
+<g>
+	<g>
+		<path fill="none" stroke="#000000" stroke-miterlimit="10" d="M757.465,463.666c2.03,0,4.03,0.021,6,0.065"/>
+		<path fill="none" stroke="#000000" stroke-miterlimit="10" stroke-dasharray="12.0928,12.0928" d="M775.546,464.284
+			c118.114,8.344,120.434,98.479,203.471,107.061"/>
+		<path fill="none" stroke="#000000" stroke-miterlimit="10" d="M985.049,571.814c1.955,0.104,3.953,0.165,5.997,0.182"/>
+		<g>
+			<polygon points="987.597,575.938 986.939,575.183 990.663,571.951 987.168,568.473 987.875,567.764 992.131,572.001 			"/>
+		</g>
+	</g>
+</g>
+<g>
+	<g>
+		<path fill="none" stroke="#000000" stroke-miterlimit="10" d="M731.464,505.666c2.028,0,4.028,0.021,6,0.061"/>
+		<path fill="none" stroke="#000000" stroke-miterlimit="10" stroke-dasharray="11.8385,11.8385" d="M749.296,506.224
+			c118.907,7.657,129.338,91.67,229.84,98.354"/>
+		<path fill="none" stroke="#000000" stroke-miterlimit="10" d="M985.047,604.877c1.965,0.069,3.965,0.109,5.999,0.12"/>
+		<g>
+			<polygon points="987.626,608.972 986.964,608.222 990.663,604.962 987.142,601.51 987.843,600.796 992.131,605.001 			"/>
+		</g>
+	</g>
+</g>
+<rect x="78" y="109" fill="none" width="1123" height="582"/>
+</svg>
